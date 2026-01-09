@@ -1,0 +1,12 @@
+{
+  "n_d": 35,
+  "n_a": 36,
+  "n_steps": 8,
+  "gamma": 1.0567825774822872,
+  "n_independent": 2,
+  "n_shared": 4,
+  "lambda_sparse": 0.0001272493022097496,
+  "lr": 0.006433741068080645,
+  "batch_size": 2048,
+  "virtual_batch_size": 256
+}

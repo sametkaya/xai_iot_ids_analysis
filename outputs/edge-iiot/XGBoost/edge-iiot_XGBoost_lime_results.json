@@ -1,0 +1,237 @@
+[
+  {
+    "sample_idx": 24,
+    "true_class": "Backdoor",
+    "predicted_class": "Backdoor",
+    "explanation": [
+      [
+        "mqtt.conflags > 0.83",
+        -0.1240454547088687
+      ],
+      [
+        "dns.retransmission <= 0.00",
+        0.08691865997594912
+      ],
+      [
+        "dns.qry.qu <= 0.00",
+        0.08272360288117753
+      ],
+      [
+        "dns.qry.name <= 0.00",
+        0.074374140796412
+      ],
+      [
+        "-0.03 < mqtt.len <= -0.03",
+        0.06863495636014776
+      ],
+      [
+        "http.response <= 0.00",
+        0.03522061363077011
+      ],
+      [
+        "tcp.connection.fin <= 0.00",
+        -0.03440902072669181
+      ],
+      [
+        "arp.hw.size <= 0.00",
+        0.033148293755257796
+      ],
+      [
+        "udp.port <= 0.00",
+        0.03145890927536593
+      ],
+      [
+        "tcp.flags.ack <= 0.00",
+        -0.027583525583054127
+      ]
+    ]
+  },
+  {
+    "sample_idx": 0,
+    "true_class": "BruteForce",
+    "predicted_class": "BruteForce",
+    "explanation": [
+      [
+        "mqtt.len > 0.93",
+        -0.1392874748709048
+      ],
+      [
+        "0.00 < dns.retransmit_request_in <= 1.00",
+        0.08557064329525857
+      ],
+      [
+        "dns.qry.name <= 0.00",
+        0.08428316646793864
+      ],
+      [
+        "dns.retransmission <= 0.00",
+        0.07589125579010937
+      ],
+      [
+        "dns.qry.qu <= 0.00",
+        0.07172703541287212
+      ],
+      [
+        "icmp.unused <= 0.00",
+        0.061429423638698744
+      ],
+      [
+        "tcp.checksum <= 0.00",
+        -0.05745990562177542
+      ],
+      [
+        "0.00 < mqtt.conflags <= 0.83",
+        -0.056994707353723265
+      ],
+      [
+        "icmp.checksum <= 0.00",
+        -0.052452635062820524
+      ],
+      [
+        "tcp.dstport <= 0.00",
+        -0.05146110783911363
+      ]
+    ]
+  },
+  {
+    "sample_idx": 4,
+    "true_class": "DDoS",
+    "predicted_class": "DDoS",
+    "explanation": [
+      [
+        "dns.retransmit_request_in <= -3.50",
+        -0.1615516308207316
+      ],
+      [
+        "dns.retransmission <= 0.00",
+        0.09393894500989824
+      ],
+      [
+        "icmp.checksum <= 0.00",
+        0.08689320570664885
+      ],
+      [
+        "dns.qry.qu <= 0.00",
+        0.0754775859354433
+      ],
+      [
+        "mqtt.conflags <= -0.00",
+        0.06956659043116782
+      ],
+      [
+        "tcp.connection.rst <= 0.00",
+        0.06569334477141898
+      ],
+      [
+        "dns.qry.name > 0.00",
+        -0.06445075751300093
+      ],
+      [
+        "http.response <= 0.00",
+        0.06054525265765862
+      ],
+      [
+        "http.tls_port <= 0.00",
+        -0.0596934020111877
+      ],
+      [
+        "tcp.connection.fin <= 0.00",
+        0.027212108902144393
+      ]
+    ]
+  },
+  {
+    "sample_idx": 9,
+    "true_class": "Injection",
+    "predicted_class": "BruteForce",
+    "explanation": [
+      [
+        "dns.retransmit_request_in <= -3.50",
+        -0.16069041966175188
+      ],
+      [
+        "dns.retransmission <= 0.00",
+        0.08041965844868229
+      ],
+      [
+        "dns.qry.qu <= 0.00",
+        0.076684144767017
+      ],
+      [
+        "dns.qry.name <= 0.00",
+        0.0674101975458395
+      ],
+      [
+        "mqtt.conflags <= -0.00",
+        0.06625140961702376
+      ],
+      [
+        "tcp.connection.rst <= 0.00",
+        0.047930662193509034
+      ],
+      [
+        "tcp.connection.fin <= 0.00",
+        0.044538210980602004
+      ],
+      [
+        "tcp.flags.ack <= 0.00",
+        -0.043277127169578454
+      ],
+      [
+        "tcp.checksum <= 0.00",
+        0.04280137976170862
+      ],
+      [
+        "icmp.unused <= 0.00",
+        0.04093329264425477
+      ]
+    ]
+  },
+  {
+    "sample_idx": 58,
+    "true_class": "MITM",
+    "predicted_class": "MITM",
+    "explanation": [
+      [
+        "dns.retransmit_request_in <= -3.50",
+        -0.1620480507780584
+      ],
+      [
+        "dns.qry.name <= 0.00",
+        0.08949205348904442
+      ],
+      [
+        "dns.retransmission <= 0.00",
+        0.08170313050185345
+      ],
+      [
+        "mqtt.conflags <= -0.00",
+        0.0758112334138534
+      ],
+      [
+        "dns.qry.qu <= 0.00",
+        0.07362613605709455
+      ],
+      [
+        "tcp.checksum <= 0.00",
+        0.059653007213423946
+      ],
+      [
+        "tcp.dstport <= 0.00",
+        -0.05345665686485617
+      ],
+      [
+        "icmp.unused > 0.00",
+        -0.047025861884570495
+      ],
+      [
+        "tcp.flags.ack <= 0.00",
+        -0.04613516741556305
+      ],
+      [
+        "tcp.connection.fin <= 0.00",
+        0.030374362608297647
+      ]
+    ]
+  }
+]

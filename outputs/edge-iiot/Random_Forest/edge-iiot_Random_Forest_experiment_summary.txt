@@ -1,0 +1,111 @@
+================================================================================
+EXPERIMENT SUMMARY - Random_Forest
+================================================================================
+Generated: 2025-12-30 02:50:47
+Dataset: edge-iiot
+
+--------------------------------------------------------------------------------
+1. MODEL CONFIGURATION
+--------------------------------------------------------------------------------
+Model: Random_Forest
+Parameters:
+{
+  "n_estimators": 273,
+  "max_depth": 20,
+  "min_samples_split": 10,
+  "min_samples_leaf": 2,
+  "random_state": 42,
+  "n_jobs": -1
+}
+
+--------------------------------------------------------------------------------
+2. DATASET INFORMATION
+--------------------------------------------------------------------------------
+Training samples: 350,000
+Validation samples: 34,055
+Test samples: 68,110
+Number of features: 35
+Number of classes: 10
+Classes: ['Backdoor', 'BruteForce', 'DDoS', 'Injection', 'MITM', 'Malware', 'Normal', 'Ransomware', 'Reconnaissance', 'XSS']
+
+--------------------------------------------------------------------------------
+3. PERFORMANCE METRICS
+--------------------------------------------------------------------------------
+Accuracy:           0.9079
+F1-Score (Macro):   0.8579
+F1-Score (Weighted):0.9118
+Precision (Macro):  0.8466
+Recall (Macro):     0.9097
+MCC:                0.8952
+Balanced Accuracy:  0.9097
+Training Time:      815.18 seconds
+
+--------------------------------------------------------------------------------
+4. PER-CLASS PERFORMANCE
+--------------------------------------------------------------------------------
+Class                 Precision     Recall   F1-Score    Support
+------------------------------------------------------------
+Backdoor                 0.9941     0.9427     0.9677     4972.0
+BruteForce               0.7473     0.8992     0.8162    10000.0
+DDoS                     0.9980     0.9350     0.9655    10000.0
+Injection                0.8957     0.8476     0.8710    10000.0
+MITM                     0.3053     1.0000     0.4678      243.0
+Malware                  0.9718     0.8573     0.9110     7527.0
+Normal                   0.9764     0.9751     0.9757    10000.0
+Ransomware               0.7872     0.9025     0.8409     2185.0
+Reconnaissance           0.9981     0.9361     0.9661    10000.0
+XSS                      0.7918     0.8018     0.7968     3183.0
+
+--------------------------------------------------------------------------------
+5. CLASSIFICATION REPORT
+--------------------------------------------------------------------------------
+                precision    recall  f1-score   support
+
+      Backdoor       0.99      0.94      0.97      4972
+    BruteForce       0.75      0.90      0.82     10000
+          DDoS       1.00      0.94      0.97     10000
+     Injection       0.90      0.85      0.87     10000
+          MITM       0.31      1.00      0.47       243
+       Malware       0.97      0.86      0.91      7527
+        Normal       0.98      0.98      0.98     10000
+    Ransomware       0.79      0.90      0.84      2185
+Reconnaissance       1.00      0.94      0.97     10000
+           XSS       0.79      0.80      0.80      3183
+
+      accuracy                           0.91     68110
+     macro avg       0.85      0.91      0.86     68110
+  weighted avg       0.92      0.91      0.91     68110
+
+
+--------------------------------------------------------------------------------
+6. FEATURE IMPORTANCE (SHAP)
+--------------------------------------------------------------------------------
+  35. mqtt.msg_decoded_as       0.037747
+  34. mqtt.len                  0.036367
+  32. mqtt.conflags             0.026745
+  30. dns.retransmit_request_in 0.019269
+  31. mqtt.conflag.cleansess    0.012815
+  33. mqtt.hdrflags             0.012315
+  29. dns.retransmit_request    0.010729
+  27. dns.qry.type              0.008351
+  28. dns.retransmission        0.008343
+  25. dns.qry.name              0.006785
+  26. dns.qry.qu                0.006013
+  18. tcp.flags                 0.005349
+  24. udp.time_delta            0.004072
+  10. tcp.ack                   0.003728
+  21. tcp.seq                   0.003174
+
+--------------------------------------------------------------------------------
+7. LIME EXPLANATIONS
+--------------------------------------------------------------------------------
+LIME explanations generated for 5 samples
+  Sample 24: True=Backdoor, Pred=Backdoor
+  Sample 0: True=BruteForce, Pred=BruteForce
+  Sample 4: True=DDoS, Pred=DDoS
+  Sample 9: True=Injection, Pred=BruteForce
+  Sample 58: True=MITM, Pred=MITM
+
+================================================================================
+END OF REPORT
+================================================================================

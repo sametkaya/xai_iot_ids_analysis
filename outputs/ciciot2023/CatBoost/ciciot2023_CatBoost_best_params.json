@@ -1,0 +1,11 @@
+{
+  "iterations": 487,
+  "depth": 10,
+  "learning_rate": 0.20805969178850509,
+  "l2_leaf_reg": 3.7036139884494204,
+  "border_count": 177,
+  "random_seed": 42,
+  "verbose": false,
+  "task_type": "GPU",
+  "auto_class_weights": "Balanced"
+}

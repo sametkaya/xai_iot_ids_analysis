@@ -1,0 +1,237 @@
+[
+  {
+    "sample_idx": 24,
+    "true_class": "Backdoor",
+    "predicted_class": "Backdoor",
+    "explanation": [
+      [
+        "dns.retransmission <= 0.00",
+        -0.05007902284440887
+      ],
+      [
+        "mqtt.conflags > 0.83",
+        -0.028417032869393604
+      ],
+      [
+        "dns.qry.name <= 0.00",
+        0.02156433204395859
+      ],
+      [
+        "tcp.checksum <= 0.00",
+        -0.021540518947309465
+      ],
+      [
+        "tcp.ack_raw <= 0.00",
+        0.021180735921193034
+      ],
+      [
+        "dns.qry.qu <= 0.00",
+        0.020445827427715776
+      ],
+      [
+        "icmp.transmit_timestamp <= 0.00",
+        0.017781660004599045
+      ],
+      [
+        "mqtt.conflag.cleansess > 4.28",
+        -0.017231076089907607
+      ],
+      [
+        "udp.stream <= 0.00",
+        0.016234114284161837
+      ],
+      [
+        "udp.time_delta <= 0.00",
+        0.015245266724498675
+      ]
+    ]
+  },
+  {
+    "sample_idx": 0,
+    "true_class": "BruteForce",
+    "predicted_class": "Ransomware",
+    "explanation": [
+      [
+        "dns.retransmission <= 0.00",
+        -0.0498641888569056
+      ],
+      [
+        "mqtt.len > 0.93",
+        -0.029920831753910665
+      ],
+      [
+        "icmp.transmit_timestamp <= 0.00",
+        0.023207645008135266
+      ],
+      [
+        "tcp.ack_raw <= 0.00",
+        0.022737169786943043
+      ],
+      [
+        "dns.qry.name <= 0.00",
+        0.021718014792901558
+      ],
+      [
+        "dns.qry.qu <= 0.00",
+        0.020175812844615337
+      ],
+      [
+        "icmp.unused <= 0.00",
+        0.017483235782777426
+      ],
+      [
+        "udp.stream <= 0.00",
+        0.014740110919668845
+      ],
+      [
+        "http.content_length <= 0.00",
+        0.014275870707266235
+      ],
+      [
+        "udp.time_delta <= 0.00",
+        0.014240315434601034
+      ]
+    ]
+  },
+  {
+    "sample_idx": 4,
+    "true_class": "DDoS",
+    "predicted_class": "DDoS",
+    "explanation": [
+      [
+        "dns.retransmission <= 0.00",
+        -0.057392017799175916
+      ],
+      [
+        "dns.qry.name > 0.00",
+        -0.02352513854756845
+      ],
+      [
+        "dns.qry.qu <= 0.00",
+        0.02285622212343167
+      ],
+      [
+        "tcp.ack_raw <= 0.00",
+        0.020984217513734183
+      ],
+      [
+        "icmp.transmit_timestamp <= 0.00",
+        0.01890867748605289
+      ],
+      [
+        "icmp.checksum <= 0.00",
+        0.018320535716800344
+      ],
+      [
+        "udp.stream <= 0.00",
+        0.01736154684237363
+      ],
+      [
+        "udp.time_delta <= 0.00",
+        0.016010021202015202
+      ],
+      [
+        "icmp.unused <= 0.00",
+        0.015080133661931687
+      ],
+      [
+        "http.tls_port <= 0.00",
+        -0.012914647683331257
+      ]
+    ]
+  },
+  {
+    "sample_idx": 9,
+    "true_class": "Injection",
+    "predicted_class": "Ransomware",
+    "explanation": [
+      [
+        "dns.retransmission <= 0.00",
+        -0.03817608179642734
+      ],
+      [
+        "icmp.checksum <= 0.00",
+        0.022752742601968322
+      ],
+      [
+        "dns.qry.name <= 0.00",
+        0.02238897310979326
+      ],
+      [
+        "dns.qry.qu <= 0.00",
+        0.021563133206469416
+      ],
+      [
+        "icmp.transmit_timestamp <= 0.00",
+        0.020753332910431906
+      ],
+      [
+        "tcp.ack_raw <= 0.00",
+        0.020592788696698287
+      ],
+      [
+        "icmp.unused <= 0.00",
+        0.017432060726385232
+      ],
+      [
+        "http.content_length <= 0.00",
+        0.01696471964013295
+      ],
+      [
+        "udp.time_delta <= 0.00",
+        0.016846116354657787
+      ],
+      [
+        "mqtt.conflag.cleansess <= 0.00",
+        0.013075172421981753
+      ]
+    ]
+  },
+  {
+    "sample_idx": 58,
+    "true_class": "MITM",
+    "predicted_class": "MITM",
+    "explanation": [
+      [
+        "dns.retransmission <= 0.00",
+        -0.04766666574535044
+      ],
+      [
+        "tcp.ack_raw <= 0.00",
+        0.02338695799055986
+      ],
+      [
+        "dns.qry.name <= 0.00",
+        0.02317996477956391
+      ],
+      [
+        "dns.qry.qu <= 0.00",
+        0.021354331166315313
+      ],
+      [
+        "icmp.transmit_timestamp <= 0.00",
+        0.018550418434008047
+      ],
+      [
+        "icmp.unused > 0.00",
+        -0.016951388910030698
+      ],
+      [
+        "udp.time_delta <= 0.00",
+        0.016866975340128057
+      ],
+      [
+        "mqtt.conflag.cleansess > 4.28",
+        -0.016736069777803345
+      ],
+      [
+        "udp.stream <= 0.00",
+        0.014744510756185658
+      ],
+      [
+        "arp.hw.size <= 0.00",
+        0.011877520489284785
+      ]
+    ]
+  }
+]

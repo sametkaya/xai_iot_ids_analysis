@@ -1,0 +1,11 @@
+{
+  "d_token": 128,
+  "n_blocks": 4,
+  "attention_n_heads": 4,
+  "attention_dropout": 0.21505548650268916,
+  "ffn_d_hidden": 128,
+  "ffn_dropout": 0.023972915321853666,
+  "lr": 0.000699621184700085,
+  "batch_size": 512,
+  "weight_decay": 1.104426524367994e-05
+}

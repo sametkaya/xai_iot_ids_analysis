@@ -1,0 +1,6 @@
+{
+  "accuracy": 0.0,
+  "f1_macro": 0.0,
+  "status": "SKIPPED - Mode Collapse",
+  "reason": "Model unsuitable for tabular data"
+}

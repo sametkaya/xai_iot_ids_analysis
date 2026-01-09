@@ -1,0 +1,117 @@
+================================================================================
+EXPERIMENT SUMMARY - LightGBM
+================================================================================
+Generated: 2025-12-30 02:35:50
+Dataset: edge-iiot
+
+--------------------------------------------------------------------------------
+1. MODEL CONFIGURATION
+--------------------------------------------------------------------------------
+Model: LightGBM
+Parameters:
+{
+  "n_estimators": 121,
+  "max_depth": 9,
+  "learning_rate": 0.03319878392552268,
+  "num_leaves": 146,
+  "min_child_samples": 77,
+  "subsample": 0.887683983373101,
+  "colsample_bytree": 0.7814080954227639,
+  "reg_alpha": 0.324761008091753,
+  "reg_lambda": 0.000303300004979472,
+  "verbose": -1,
+  "random_state": 42,
+  "n_jobs": -1
+}
+
+--------------------------------------------------------------------------------
+2. DATASET INFORMATION
+--------------------------------------------------------------------------------
+Training samples: 350,000
+Validation samples: 34,055
+Test samples: 68,110
+Number of features: 35
+Number of classes: 10
+Classes: ['Backdoor', 'BruteForce', 'DDoS', 'Injection', 'MITM', 'Malware', 'Normal', 'Ransomware', 'Reconnaissance', 'XSS']
+
+--------------------------------------------------------------------------------
+3. PERFORMANCE METRICS
+--------------------------------------------------------------------------------
+Accuracy:           0.9116
+F1-Score (Macro):   0.8637
+F1-Score (Weighted):0.9156
+Precision (Macro):  0.8565
+Recall (Macro):     0.9138
+MCC:                0.8998
+Balanced Accuracy:  0.9138
+Training Time:      826.83 seconds
+
+--------------------------------------------------------------------------------
+4. PER-CLASS PERFORMANCE
+--------------------------------------------------------------------------------
+Class                 Precision     Recall   F1-Score    Support
+------------------------------------------------------------
+Backdoor                 0.9987     0.9368     0.9668     4972.0
+BruteForce               0.7275     0.9167     0.8112    10000.0
+DDoS                     0.9993     0.9411     0.9693    10000.0
+Injection                0.9330     0.8340     0.8807    10000.0
+MITM                     0.3053     1.0000     0.4678      243.0
+Malware                  0.9842     0.8536     0.9143     7527.0
+Normal                   0.9643     0.9873     0.9756    10000.0
+Ransomware               0.7747     0.9286     0.8447     2185.0
+Reconnaissance           0.9980     0.9394     0.9678    10000.0
+XSS                      0.8804     0.8005     0.8386     3183.0
+
+--------------------------------------------------------------------------------
+5. CLASSIFICATION REPORT
+--------------------------------------------------------------------------------
+                precision    recall  f1-score   support
+
+      Backdoor       1.00      0.94      0.97      4972
+    BruteForce       0.73      0.92      0.81     10000
+          DDoS       1.00      0.94      0.97     10000
+     Injection       0.93      0.83      0.88     10000
+          MITM       0.31      1.00      0.47       243
+       Malware       0.98      0.85      0.91      7527
+        Normal       0.96      0.99      0.98     10000
+    Ransomware       0.77      0.93      0.84      2185
+Reconnaissance       1.00      0.94      0.97     10000
+           XSS       0.88      0.80      0.84      3183
+
+      accuracy                           0.91     68110
+     macro avg       0.86      0.91      0.86     68110
+  weighted avg       0.93      0.91      0.92     68110
+
+
+--------------------------------------------------------------------------------
+6. FEATURE IMPORTANCE (SHAP)
+--------------------------------------------------------------------------------
+  35. mqtt.msg_decoded_as       0.607606
+  34. mqtt.len                  0.559775
+  32. mqtt.conflags             0.327334
+  30. dns.retransmit_request_in 0.244846
+  31. mqtt.conflag.cleansess    0.153454
+  29. dns.retransmit_request    0.152113
+  25. dns.qry.name              0.106258
+  33. mqtt.hdrflags             0.076468
+  26. dns.qry.qu                0.074734
+  24. udp.time_delta            0.062048
+  18. tcp.flags                 0.050796
+  28. dns.retransmission        0.043440
+  16. tcp.connection.synack     0.027267
+  10. tcp.ack                   0.022588
+   8. http.response             0.020969
+
+--------------------------------------------------------------------------------
+7. LIME EXPLANATIONS
+--------------------------------------------------------------------------------
+LIME explanations generated for 5 samples
+  Sample 24: True=Backdoor, Pred=Backdoor
+  Sample 0: True=BruteForce, Pred=BruteForce
+  Sample 4: True=DDoS, Pred=DDoS
+  Sample 9: True=Injection, Pred=BruteForce
+  Sample 58: True=MITM, Pred=MITM
+
+================================================================================
+END OF REPORT
+================================================================================

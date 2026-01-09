@@ -1,0 +1,237 @@
+[
+  {
+    "sample_idx": 24,
+    "true_class": "Backdoor",
+    "predicted_class": "Backdoor",
+    "explanation": [
+      [
+        "-0.03 < mqtt.len <= -0.03",
+        0.08698549378194965
+      ],
+      [
+        "mqtt.conflags > 0.83",
+        -0.04479764256403776
+      ],
+      [
+        "dns.retransmission <= 0.00",
+        -0.042921706306203594
+      ],
+      [
+        "tcp.checksum <= 0.00",
+        0.037752418573162964
+      ],
+      [
+        "mqtt.conflag.cleansess > 4.28",
+        -0.03513279527173552
+      ],
+      [
+        "tcp.dstport <= 0.00",
+        0.03502588211787902
+      ],
+      [
+        "icmp.checksum <= 0.00",
+        -0.031177414671330665
+      ],
+      [
+        "0.00 < mqtt.msg_decoded_as <= 0.93",
+        -0.027663350320374622
+      ],
+      [
+        "tcp.flags <= 0.00",
+        -0.02304865380239439
+      ],
+      [
+        "tcp.connection.fin <= 0.00",
+        -0.022669396806493877
+      ]
+    ]
+  },
+  {
+    "sample_idx": 0,
+    "true_class": "BruteForce",
+    "predicted_class": "BruteForce",
+    "explanation": [
+      [
+        "tcp.connection.fin <= 0.00",
+        -0.059214006647758256
+      ],
+      [
+        "mqtt.len > 0.93",
+        -0.05866928923002707
+      ],
+      [
+        "dns.retransmission <= 0.00",
+        -0.05325691923035467
+      ],
+      [
+        "mqtt.msg_decoded_as <= -0.07",
+        0.04915155390194686
+      ],
+      [
+        "0.00 < dns.retransmit_request_in <= 1.00",
+        0.04496169585150085
+      ],
+      [
+        "mqtt.conflag.cleansess <= 0.00",
+        0.033146903200496056
+      ],
+      [
+        "icmp.transmit_timestamp <= 0.00",
+        0.027656550062855015
+      ],
+      [
+        "icmp.unused <= 0.00",
+        0.02284250961618529
+      ],
+      [
+        "http.tls_port <= 0.00",
+        0.021648784046290472
+      ],
+      [
+        "tcp.seq <= 0.00",
+        -0.02030559346018569
+      ]
+    ]
+  },
+  {
+    "sample_idx": 4,
+    "true_class": "DDoS",
+    "predicted_class": "DDoS",
+    "explanation": [
+      [
+        "mqtt.len <= -0.03",
+        -0.063964762616257
+      ],
+      [
+        "tcp.ack_raw <= 0.00",
+        -0.05758458454657066
+      ],
+      [
+        "mqtt.msg_decoded_as <= -0.07",
+        0.04375955109522569
+      ],
+      [
+        "dns.retransmission <= 0.00",
+        -0.04342965036457196
+      ],
+      [
+        "dns.retransmit_request_in <= -3.50",
+        -0.03818116121957349
+      ],
+      [
+        "mqtt.conflag.cleansess <= 0.00",
+        0.035934353984977394
+      ],
+      [
+        "udp.port <= 0.00",
+        -0.03523501679108906
+      ],
+      [
+        "tcp.checksum <= 0.00",
+        0.03167103838564201
+      ],
+      [
+        "udp.time_delta <= 0.00",
+        0.026181077757287053
+      ],
+      [
+        "tcp.connection.rst <= 0.00",
+        0.025743243181159243
+      ]
+    ]
+  },
+  {
+    "sample_idx": 9,
+    "true_class": "Injection",
+    "predicted_class": "BruteForce",
+    "explanation": [
+      [
+        "tcp.connection.rst <= 0.00",
+        -0.06099075227504708
+      ],
+      [
+        "mqtt.len <= -0.03",
+        -0.06090478714760003
+      ],
+      [
+        "dns.retransmission <= 0.00",
+        -0.05734815739643243
+      ],
+      [
+        "http.content_length <= 0.00",
+        -0.04296832312145191
+      ],
+      [
+        "dns.retransmit_request_in <= -3.50",
+        -0.04068576205914084
+      ],
+      [
+        "mqtt.msg_decoded_as <= -0.07",
+        0.039009574249087
+      ],
+      [
+        "mqtt.conflag.cleansess <= 0.00",
+        0.03427925715127511
+      ],
+      [
+        "tcp.connection.fin <= 0.00",
+        -0.03255210143476386
+      ],
+      [
+        "tcp.connection.syn <= 0.00",
+        0.03174624844721757
+      ],
+      [
+        "udp.stream <= 0.00",
+        -0.02650679058162222
+      ]
+    ]
+  },
+  {
+    "sample_idx": 58,
+    "true_class": "MITM",
+    "predicted_class": "MITM",
+    "explanation": [
+      [
+        "mqtt.len <= -0.03",
+        -0.06187902459917388
+      ],
+      [
+        "tcp.connection.rst <= 0.00",
+        -0.05583448993062658
+      ],
+      [
+        "mqtt.msg_decoded_as <= -0.07",
+        0.04305986431162976
+      ],
+      [
+        "dns.retransmit_request_in <= -3.50",
+        -0.04242763970546877
+      ],
+      [
+        "mqtt.conflag.cleansess > 4.28",
+        -0.03940768271912286
+      ],
+      [
+        "tcp.checksum <= 0.00",
+        0.03031011341586442
+      ],
+      [
+        "mqtt.conflags <= -0.00",
+        0.03017829166580696
+      ],
+      [
+        "http.tls_port <= 0.00",
+        0.025124724020135155
+      ],
+      [
+        "dns.retransmission <= 0.00",
+        -0.024579023533628414
+      ],
+      [
+        "tcp.flags.ack <= 0.00",
+        0.022115513674837835
+      ]
+    ]
+  }
+]
